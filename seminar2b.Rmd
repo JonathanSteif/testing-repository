@@ -1,0 +1,20 @@
+---
+title: 'Seminar 2b: Graphing using ggplot2'
+author: "Jonathan Steif"
+date: "January 10, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+```
+
+```{r}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy, color = drv, size = class))
+```
+
